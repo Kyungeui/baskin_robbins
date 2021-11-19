@@ -1,42 +1,125 @@
 @charset "utf-8";
+/* 나눔 고딕 웹폰트 */
+@import url(https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean);
 
+/* 공통 영역 */
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
-
+    font-family: 'Nanum Gothic', sans serif;
 }
+
 html, body {
-    width: 1200px;
-    height: auto;
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    border-top: 2px solid rgb(238, 131, 153);
 }
-div {
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* float & clearboth */
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
     display: block;
-  }
-/** top menu **/
-.topbar {
+    float: none;
+    clear: both;
+}
+
+/* flex 정렬 */
+.flex {
+    display: flex;
+}
+
+/* 상단바 */
+.top-bar {
+    position: relative;
     width: 1200px;
-    display: flex;
-    height: 114px;
-}
-.topicon5 {
-    width: 300px;
-    display: flex;
+    height: 130px;
+    margin: 0 auto;
 }
 
-/** 다른 메뉴 **/
-.topmenu {
-    width: calc(1200px -300px)
-    display: flex;
+/* 상단바 > 왼쪽 */
+.top-bar .top-icons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
-.topright {
-    width: 400px;
 
+.top-bar .top-icons .top-icon {
+    margin-right: 10px;
 }
-/** logo ***/
+
+/* 상단바 > 로고 */
+.top-bar .main-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 상단바 > 오른쪽 */
+.top-bar .top-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.top-bar .top-right li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.top-bar .top-right li:last-child {
+    margin-right: 0;
+}
+.top-bar .top-right li a {
+    font-size: 11px;
+    color: #4a3d39;
+}
 
 
-/** 큰로고 **/
+/* 로그인 바 */
+.top-menu {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 46px;
+}
+.top-menu li {
+    border: 2px solid red;
+    height: inherit;
+    float: left;
+    display: block;
+    width: 200px;
+}
+.top-menu li:nth-child(1), .top-menu li:nth-child(2) {
+    border: 2px solid red;
+    display: block;
+    width: 104px;
+}
+.top-menu li a {
+    border: 2px solid blue;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
 
 
+/** 메인 사진들 */
+.main-head img {
+    width: 100%;
+}

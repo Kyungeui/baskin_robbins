@@ -5,66 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Document</title>
+    <title>Baskin Robbins</title>
   </head>
   <body>
-    <div class="topbar">
-      <ul class="topicon5">
-        <li><img src="img/topicon1.png" alt="icon1" /></li>
-        <li><img src="img/topicon2.png" alt="icon2" /></li>
-        <li><img src="img/topicon3.png" alt="icon3" /></li>
-        <li><img src="img/topicon4.png" alt="icon4" /></li>
-        <li><img src="img/topicon5.png" alt="icon5" /></li>
+    <!-- * 상단 바 -->
+    <div class="top-bar container">
+      <!-- 왼쪽 -->
+      <ul class="top-icons flex">
+        <li class="top-icon">
+          <a href="#">
+            <img src="img/topicon1.png" alt="icon1" />
+          </a>
+        </li>
+        <li class="top-icon">
+          <a href="#">
+            <img src="img/topicon2.png" alt="icon2" />
+          </a>
+        </li>
+        <li class="top-icon">
+          <a href="#">
+            <img src="img/topicon3.png" alt="icon3" />
+          </a>
+        </li>
+        <li class="top-icon">
+          <a href="#">
+            <img src="img/topicon4.png" alt="icon4" />
+          </a>
+        </li>
+        <li class="top-icon">
+          <a href="#">
+            <img src="img/topicon5.png" alt="icon5" />
+          </a>
+        </li>
       </ul>
-      <div class="mainicon">
-        <img src="img/mainicon.png" alt="" />
+
+      <!-- 로고 -->
+      <div class="main-icon">
+        <a href="http://www.baskinrobbins.co.kr/">
+          <img src="img/mainicon.png" alt="" />
+        </a>
       </div>
-      <div class="topright">
-        <span class="toprightcontact">고객센터</span>
-        <span class="toprightcontact">CONTACT US</span>
-        <img src="img/topiconright.png" class="glasses" alt="glasses" />
-        </div>
+
+      <!-- 오른쪽 -->
+      <ul class="top-right">
+        <li><a href="#" class="top-right-contact">고객센터</a></li>
+        <li><a href="#" class="top-right-contact">CONTACT US</a></li>
+        <li><a href="#" class="top-right-contact"><img src="img/topiconright.png" class="glasses" alt="glasses" /></a></li>
+      </ul>
     </div>    
-      <div class="topmenu">
-        <li><span class="log-join">LOGIN</span></li>
-        <li><span class="log-join">JOIN</span></li>
-        <li><span class="menubtns">FLAVOR OR THE MONTH</span></li>
-        <li><span class="menubtns">MENU</span></li>
-        <li><span class="menubtns">영양 성분 및 알레르기</span></li>
-        <li><span class="menubtns">EVENT</span></li>
-        <li><span class="menubtns">STORE</span></li>
-        <li><span class="menubtns">ABOUT</span></li>
-      </div>
+
+      <!-- 로그인 바 -->
+      <div class="top-menu">
+      <ul class="container clearfix">
+        <li><a href="#" class="log-join">LOGIN</a></li>
+        <li><a href="#" class="log-join">JOIN</a></li>
+        <li><a href="#" class="menu-btns">FLAVOR OR THE MONTH</a></li>
+        <li><a href="#" class="menu-btns">MENU</a></li>
+        <li><a href="#" class="menu-btns">영양 성분 및 알레르기</a></li>
+        <li><a href="#" class="menu-btns">EVENT</a></li>
+        <li><a href="#" class="menu-btns">STORE</a></li>
+        <li><a href="#" class="menu-btns">ABOUT</a></li>
+      </ul>
+    </div>
     
-    <!--메인 사진들-->
-    <header class="mainhead">
-      <img src="img/firsttopimg.jpg" class="firstmain" alt="firsttopimg" />
-      <img src="img/sectopimg.png" class="secondmain" alt="sectopimg" />
+    <!-- * 메인 사진들 -->
+    <header class="main-head">
+      <img src="img/firsttopimg.jpg" class="first-main" alt="firsttopimg" />
+      <img src="img/sectopimg.png" class="second-main" alt="sectopimg" />
     </header>
 
-    <!--BR EVENT-->
-    <div class="content">
-      <div class="event">
+    <!-- * BR EVENT -->
+    <div class="content container">
+      <div class="event clearfix">
         <img src="img/brevent.png" alt="brevent" class="brevent" />
-        <div class="deliverlist">
+
+        <div class="deliver-list pull-left">
           <img src="img/happydeliver.png" alt="happydeliver" />
           <img src="img/storeevent.gif" alt="storeevent" />
           <h6>해피오더 딜리버리로 간편하게 주문하세요!</h6>
           <p class="always">상시진행</p>
         </div>
-        <div class="deliverlist">
+
+        <div class="deliver-list pull-left">
           <img src="img/deliverman.png" alt="deliverman" />
           <img src="img/storeevent.gif" alt="storeevent" />
           <h6>배달의 민족에서 빠르게 주문하세요!</h6>
           <p class="always">상시진행</p>
         </div>
-        <div class="deliverlist">
+
+        <div class="deliver-list pull-left">
           <img src="img/yogiyo.png" alt="yogiyo" />
           <img src="img/storeevent.gif" alt="storeevent" />
           <h6>요기요에서 손쉽게 주문하세요!</h6>
           <p class="always">상시진행</p>
         </div>
-        <div class="deliverlist">
+
+        <div class="deliver-list pull-left">
           <img src="img/kakao.png" alt="kakao" />
           <img src="img/storeevent.gif" alt="storeevent" />
           <h6>카카오톡 주문하기에서 편리하게 주문하세요!</h6>
@@ -72,14 +108,14 @@
         </div>
       </div>
 
-      <!--BR MENU-->
-      <div class="newmenu" id="menu">
+      <!-- * BR MENU -->
+      <div class="new-menu container" id="menu">
         <div class="menulogo"><img src="img/brmenu.png" alt="brmenu" /></div>
         <a href="#menu"><img src="img/icecream.png" alt="icecream" /></a>
       </div>
 
-      <!--deliver-->
-      <div class="deliver">
+      <!-- * deliver -->
+      <div class="deliver container">
         <div class="deliverlogo">
           <img src="img/brstore.png" alt="brstore" />
         </div>
@@ -92,8 +128,9 @@
         </div>
       </div>
     </div>
-    <!--sns-->
-    <div class="review">
+
+    <!-- * sns -->
+    <div class="review container">
       <div class="sns">
         <img src="img/f.png" alt="f" />
         <img src="img/twt.png" alt="twt" />
@@ -124,7 +161,8 @@
     </div>
     <hr />
 
-    <footer class="foot">
+    <!-- * 하단 -->
+    <footer class="foot container">
       <div class="footlist">
         <p>점포개설문의</p>
         <p>채용문의</p>
@@ -134,6 +172,7 @@
         <p>영상정보처리기기운영관리방침</p>
         <p>거래희망회사 사전등록</p>
       </div>
+
       <div class="footcompany">
         <select name="familysite" id="familysite">
           <option>FAMILY SITE</option>
@@ -142,6 +181,7 @@
           <option value="USE">USE</option>
         </select>
       </div>
+
       <div class="lastinfo">
         <div class="rootericon">
           <img src="img/rooterbr.png" alt="rootericon" />
