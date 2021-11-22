@@ -38,6 +38,53 @@ html, body {
     float: none;
     clear: both;
 }
+/* 버튼 */
+.swipe { 
+    position: relative; 
+    transform: translate(100);
+}
+.swipe a {
+    display: block;
+    position: relative;
+}
+.swipe button { 
+    position: absolute; 
+    margin: 20px;
+    z-index: 10; 
+    top: 50%; 
+    transform: 
+    translateY(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color:transparent;
+    border: 5px solid rgba(255, 255, 255, 0.363);
+
+}
+.swipe button::before {
+    font-family: 'xeicon';
+    color: rgba(255, 255, 255, 0.486);
+    font-size: 70px;
+} 
+.swipe button.slick-prev {
+    left:0;
+    font-size: 0;
+    color: transparent;
+}
+.swipe button.slick-prev::before {
+    content: "\e93d";
+    font-family: 'xeicon';
+}
+.swipe button.slick-next {
+    right:0;
+    font-size: 0;
+    color: transparent;
+}
+.swipe button.slick-next::before {
+    content: "\e940";
+    font-family: 'xeicon'
+}
+
 
 /* flex 정렬 */
 .flex {

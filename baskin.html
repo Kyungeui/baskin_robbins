@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Baskin Robbins</title>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script>
+      $(function() {
+        $('.swipe').slick({
+          
+          autoplay: true,
+          autoplaySpeed: 3000,
+        });
+      });
+    </script>
+
+ 
   </head>
   <body>
     <!-- * 상단 바 -->
@@ -77,21 +94,13 @@
         <img src="img/first-top-img.jpg" alt="top-img">
       </a>
     </div>
+
+    <!-- * 슬라이드 부분 -->
     <div class="swipe">
-      <ul class="swipe-banner">
-        <li class="banner1">
-          <a href="#"><img src="img/banner-img01.jpg" alt="banner01"></a>
-        </li>
-        <li class="banner2">
-          <a href="#"><img src="img/banner-img02.png" alt="banner02"></a>
-        </li>
-        <li class="banner3">
-          <a href="#"><img src="img/banner-img03.png" alt="banner03"></a>
-        </li>
-        <li class="banner4">
-          <a href="#"><img src="img/banner-img04.jpg" alt="banner04"></a>
-        </li>
-      </ul>
+      <div><a href="#"><img src="img/banner-img01.jpg" alt="banner01"></a></div>
+      <div><a href="#"><img src="img/banner-img02.png" alt="banner02"></a></div>
+      <div><a href="#"><img src="img/banner-img03.png" alt="banner03"></a></div>
+      <div><a href="#"><img src="img/banner-img04.jpg" alt="banner04"></a></div>
     </div>
 
     <!-- * BR EVENT -->
@@ -353,5 +362,9 @@
         <p class="address">Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.</p>
       </div>
     </footer>
+
+
+    
+   script>
   </body>
 </html>
