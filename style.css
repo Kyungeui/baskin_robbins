@@ -214,7 +214,8 @@ html, body {
     background-color: #f9f9f9;
     width: 1450px;
     margin-top: 46px;
-    margin-left: -235px;
+    /* 수정 margin-left: -235px; */
+    margin-left: -310px;
     height: 274px;
     z-index: 1;
     border-top: 0.5px solid black;
@@ -263,6 +264,7 @@ html, body {
 }
 .menu-btns:hover .dropdown-content {
     display: block;    
+    transition: 0.5s ease-in-out;
 }
 /* 안에 리스트들 */
 
@@ -597,7 +599,8 @@ html, body {
     display: block;
 }
 /* 하단 > 두번째 라인 > 버튼 */
-.foot .familysite button {
+.foot .familysite button { /* button */
+    display: block;
     width: 100%;
     height: 32px;
     padding-left: 11px;
@@ -610,13 +613,13 @@ html, body {
     box-shadow: 2px 2px 2px 0px rgb(234 233 232);
 }
 
-/* 하단 > 두번째 라인 > 버튼 클릭 시 */
-.foot .familysite button.on {
-    background-image: url(.img/family_size_on.png);
+/* 하단 > 두번째 라인 > 버튼 클릭 시 
+.foot .familysite button .on {
+    background-image: url(./img/family_size_on.png);
 }
 .foot .familysite .on + ul {
     display: block;
-}
+}*/
 
 /* 하단 > 두번째 라인 > 버튼 안에 들어갈 내용 */
 .foot .familysite ul {
